@@ -1,0 +1,26 @@
+<div class="time-entries">
+  <div class="list-group">
+    <a class="list-group-item" *ngFor="let plan of plans">
+      <div class="row">
+        <div class="col-sm-2 user-details">
+          <img src="http://pic.dfhon.com/pictures/20100401/141048.jpg" class="avatar img-circle img-responsive" />
+          <p class="text-center">
+            <strong>{{plan.name}}</strong>
+        </div>
+        <div class="col-sm-2 text-center time-block">
+          <h3 class="list-group-item-text total-time">
+            <i class="glyph-icon glyph-icon-time"></i>{{plan.totalTime}}
+          </h3>
+          <p class="label label-primary text-center">
+            <i class="glyph-icon glyph-icon-calendar"></i>{{plan.date}}}
+        </div>
+        <div class="col-sm-7 comment-section">{{plan.comment}}
+        </div>
+        <div class="col-sm-1">
+          <button class="btn btn-xs btn-danger delete-button">X
+          </button>
+        </div>
+      </div>
+    </a>
+  </div>
+</div>
